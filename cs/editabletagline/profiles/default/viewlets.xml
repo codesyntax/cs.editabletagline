@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<object>
+ <order manager="plone.portaltagline">
+   <viewlet name="cs.editabletagline" />
+ </order>
+</object>

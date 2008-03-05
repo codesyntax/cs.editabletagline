@@ -4,5 +4,33 @@
     i18n_domain="cs.editabletagline">
 
     <five:registerPackage package="." initialize=".initialize" />
+    
+    <gs:registerProfile
+        name="default"
+        title="cs.editabletagline"
+        directory="profiles/default"
+        description="Create an editable tagline with portlet assignments"
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        />
+
+    <browser:page
+        name="editabletagline-controlpanel"
+        for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+        class=".tagline.EditableTaglineControlPanel"
+        permission="cmf.ManagePortal"
+        layer=".interfaces.IProductLayer"
+        />
+
+    <adapter
+        factory=".tagline.EditableTaglineControlPanelAdapter"
+        />
+
+    <browser:viewlet
+        name="cs.editabletagline"
+        manager="plone.app.layout.viewlets.interfaces.IPortalFooter"
+        class=".tagline.EditableTaglineViewlet"
+        permission="zope2.View"
+        layer=".interfaces.IProductLayer"
+        />
 
 </configure>

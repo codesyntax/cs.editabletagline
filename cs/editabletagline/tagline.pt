@@ -1,0 +1,3 @@
+<div id="editable-tagline">
+  <p tal:replace="structure view/tagline_text"/>
+</div> 

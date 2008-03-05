@@ -1,0 +1,6 @@
+<layers>
+  <layer
+      name="cs.editabletagline"
+      interface="cs.editabletagline.interfaces.IProductLayer"
+      />
+</layers>
