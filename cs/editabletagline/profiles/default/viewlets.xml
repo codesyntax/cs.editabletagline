@@ -1,6 +1,11 @@
 <?xml version="1.0"?>
 <object>
  <order manager="plone.portalheader">
-   <viewlet name="cs.editabletagline" />
+<viewlet name="plone.site_actions" />
+<viewlet name="plone.searchbox" />
+<viewlet name="plone.logo" />
+<viewlet name="cs.editabletagline" />
+<viewlet name="plone.global_sections" />
+
  </order>
 </object>

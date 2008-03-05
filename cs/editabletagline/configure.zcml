@@ -1,6 +1,8 @@
 <configure
     xmlns="http://namespaces.zope.org/zope"
     xmlns:five="http://namespaces.zope.org/five"
+    xmlns:gs="http://namespaces.zope.org/genericsetup"
+    xmlns:browser="http://namespaces.zope.org/browser"
     i18n_domain="cs.editabletagline">
 
     <five:registerPackage package="." initialize=".initialize" />
@@ -27,7 +29,7 @@
 
     <browser:viewlet
         name="cs.editabletagline"
-        manager="plone.app.layout.viewlets.interfaces.IPortalFooter"
+        manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
         class=".tagline.EditableTaglineViewlet"
         permission="zope2.View"
         layer=".interfaces.IProductLayer"
