@@ -1,0 +1,9 @@
+Changelog for cs.editabletagline
+
+    (name of developer listed in brackets)
+
+cs.editabletagline - 0.1 Unreleased
+
+    - Initial package structure.
+      [zopeskel]
+
