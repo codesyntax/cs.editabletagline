@@ -1,5 +1,4 @@
 README.txt
-setup.cfg
 setup.py
 cs/__init__.py
 cs.editabletagline.egg-info/PKG-INFO
@@ -9,7 +8,6 @@ cs.editabletagline.egg-info/entry_points.txt
 cs.editabletagline.egg-info/namespace_packages.txt
 cs.editabletagline.egg-info/not-zip-safe
 cs.editabletagline.egg-info/paster_plugins.txt
-cs.editabletagline.egg-info/paster_plugins.txt~
 cs.editabletagline.egg-info/requires.txt
 cs.editabletagline.egg-info/top_level.txt
 cs/editabletagline/__init__.py
