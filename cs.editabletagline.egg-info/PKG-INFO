@@ -1,10 +1,6 @@
 Metadata-Version: 1.0
 Name: cs.editabletagline
-<<<<<<< .mine
-Version: 0.2
-=======
-Version: 0.1
->>>>>>> .r12646
+Version: 0.3
 Summary: UNKNOWN
 Home-page: http://svn.plone.org/svn/plone/plone.example
 Author: lur
