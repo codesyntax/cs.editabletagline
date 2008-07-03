@@ -36,14 +36,23 @@ class EditableTaglineControlPanelAdapter(SchemaAdapterBase):
         self.fprops = pprop.tagline_properties
 
     def get_tagline_text(self):
-        text = getattr(self.fprops, 'tagline_text', u'')
+	language = self.portal.request.get('LANGUAGE', '')
+	ida='tagline_text_' + language
+        text = getattr(self.fprops, ida, u'')
         return safe_unicode(text)
         
     def set_tagline_text(self, value):
-        if value is not None:
-            self.fprops.tagline_text = value.encode(self.encoding)
-        else:
-            self.fprops.tagline_text = ''
+	language = self.portal.request.get('LANGUAGE', '')
+	ida='tagline_text_' + language
+	if value is not None:
+	    value=value.encode(self.encoding)
+	else:
+	    value=''
+	    
+	if self.fprops.hasProperty(ida):
+	    self.fprops.ida=value
+	else:
+	    self.fprops.manage_addProperty(ida,value,'text')
 
 
     tagline_text = property(get_tagline_text, set_tagline_text)
@@ -64,9 +73,11 @@ class EditableTaglineControlPanel(ControlPanelForm):
 class EditableTaglineViewlet(ViewletBase):
 
     def update(self):
+	language = self.request.get('LANGUAGE', '')
+	ida='tagline_text_' + language
         pprops = getToolByName(self.context, 'portal_properties')
         fprops = pprops.tagline_properties
-        text = getattr(fprops, 'tagline_text', u'')
+        text = getattr(fprops, ida, u'')
         self.tagline_text = safe_unicode(text)
 
     render = ViewPageTemplateFile('tagline.pt')

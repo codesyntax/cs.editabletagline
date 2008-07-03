@@ -1,11 +1,3 @@
 <div id="editable-tagline">
-
-  <!--hau da berez egin behar dena, baino honek hizkuntza bakarrarekin funtzionatzen du eta ongi egin arte txapuza hau egin behar izan dut
-  <p tal:replace="structure view/tagline_text"/>-->
-  <tal:definizioa define="lang here/Language" tal:condition="python: lang=='eu'">
-  <span>Lanbide Heziketako Institutu Publikoen Elkartea</span>
-  </tal:definizioa>
-  <tal:definizioa define="lang here/Language" tal:condition="python: lang=='es'">
-  <span>Asociación de Institutos Públicos de Formación Profesional</span>
-  </tal:definizioa>
+  <p tal:replace="structure view/tagline_text"/>
 </div> 
