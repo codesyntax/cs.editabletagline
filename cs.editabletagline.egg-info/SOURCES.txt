@@ -16,6 +16,7 @@ cs/editabletagline/interfaces.py
 cs/editabletagline/tagline.pt
 cs/editabletagline/tagline.py
 cs/editabletagline/tests.py
+cs/editabletagline/version.txt
 cs/editabletagline/profiles/default/browserlayer.xml
 cs/editabletagline/profiles/default/controlpanel.xml
 cs/editabletagline/profiles/default/propertiestool.xml
