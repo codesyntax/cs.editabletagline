@@ -1,4 +1,5 @@
 README.txt
+setup.cfg
 setup.py
 cs/__init__.py
 cs.editabletagline.egg-info/PKG-INFO
