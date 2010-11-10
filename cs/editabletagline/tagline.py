@@ -36,13 +36,13 @@ class EditableTaglineControlPanelAdapter(SchemaAdapterBase):
         self.fprops = pprop.tagline_properties
 
     def get_tagline_text(self):
-	language = self.portal.request.get('LANGUAGE', '')
+	language = self.portal.REQUEST.get('LANGUAGE', '')
 	ida='tagline_text_' + language
         text = getattr(self.fprops, ida, u'')
         return safe_unicode(text)
         
     def set_tagline_text(self, value):
-	language = self.portal.request.get('LANGUAGE', '')
+	language = self.portal.REQUEST.get('LANGUAGE', '')
 	ida='tagline_text_' + language
 	if value is not None:
 	    value=value.encode(self.encoding)
