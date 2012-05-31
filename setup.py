@@ -1,24 +1,22 @@
 from setuptools import setup, find_packages
+import os
 
-version = '0.9'
+version = '1.0'
 
 setup(name='cs.editabletagline',
       version=version,
-      description="",
-      long_description="""\
-""",
+      description="A simple package providing a editable footer for Plone",
+      long_description=open("README.txt").read() + "\n" +
+                       open(os.path.join("docs", "HISTORY.txt")).read(),
       # Get more strings from http://www.python.org/pypi?%3Aaction=list_classifiers
       classifiers=[
         "Framework :: Plone",
-        "Framework :: Zope2",
-        "Framework :: Zope3",
         "Programming Language :: Python",
-        "Topic :: Software Development :: Libraries :: Python Modules",
         ],
       keywords='',
-      author='lur',
+      author='Lur Ibargutxi',
       author_email='libargutxi@codesyntax.com',
-      url='http://code.codesyntax.com/private/cs.editabletagline',
+      url='http://github.com/codesyntax/cs.editabletagline',
       license='GPL',
       packages=find_packages(exclude=['ez_setup']),
       namespace_packages=['cs'],
@@ -30,5 +28,8 @@ setup(name='cs.editabletagline',
       ],
       entry_points="""
       # -*- Entry points: -*-
+      
+      [z3c.autoinclude.plugin]
+      target = plone      
       """,
       )

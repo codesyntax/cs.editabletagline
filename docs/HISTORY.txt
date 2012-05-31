@@ -1,9 +1,16 @@
-Changelog for cs.editabletagline
+===================
+cs.editabletagline
+=================== 
 
-    (name of developer listed in brackets)
+1.0 (2012/05/31)
+--------------------
 
-cs.editabletagline - 0.1 Unreleased
+    - Plone 4.1 support and documentation
+      [erral]
 
-    - Initial package structure.
-      [zopeskel]
 
+Previous versions
+-----------------------
+
+    - Multilingual editable footer viewlet
+      [erral & lur]
