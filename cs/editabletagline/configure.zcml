@@ -5,7 +5,7 @@
     xmlns:browser="http://namespaces.zope.org/browser"
     i18n_domain="cs.editabletagline">
 
-    <five:registerPackage package="." initialize=".initialize" />
+    <include package="Products.CMFCore" file="permissions.zcml" />
     
     <gs:registerProfile
         name="default"

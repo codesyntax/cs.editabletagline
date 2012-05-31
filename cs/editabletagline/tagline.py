@@ -32,7 +32,6 @@ class EditableTaglineControlPanelAdapter(SchemaAdapterBase):
         self.portal = context
         pprop = getToolByName(self.portal, 'portal_properties')
         self.context = pprop.site_properties
-        self.encoding = pprop.site_properties.default_charset
         self.fprops = pprop.tagline_properties
 
     def get_tagline_text(self):
