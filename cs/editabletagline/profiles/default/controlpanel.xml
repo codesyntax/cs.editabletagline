@@ -1,10 +1,16 @@
 <?xml version="1.0"?>
-<object name="portal_controlpanel">
-  <configlet title="Editable tagline settings" action_id="EditableTagline"
-             appId="EditableTagline" category="Products"
+<object name="portal_controlpanel"
+        i18n:domain="cs.editablefooter"
+        xmlns:i18n="http://xml.zope.org/namespaces/i18n">
+  <configlet title="Editable tagline settings"
+             action_id="cs.editabletagline.edittagline"
+             appId="cs.editabletagline"
+             category="Products"
              condition_expr=""
+             icon_expr="string:$portal_url/maintenance_icon.png"
              url_expr="string:${portal_url}/@@editabletagline-controlpanel"
-             visible="True">
-    <permission>Manage portal</permission>
+             visible="True"
+             i18n:attributes="title">
+    <permission>cs.editabletagline: edit tagline</permission>
   </configlet>
 </object>

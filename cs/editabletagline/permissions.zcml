@@ -1,0 +1,10 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    i18n_domain="cs.editabletagline">
+
+    <permission
+            id="cs.editabletagline.edittagline"
+            title="cs.editabletagline: edit tagline"
+    />
+
+</configure>

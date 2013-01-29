@@ -1,0 +1,22 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:gs="http://namespaces.zope.org/genericsetup"
+    i18n_domain="cs.editablefooter">
+
+    <gs:registerProfile
+        name="default"
+        title="cs.editabletagline"
+        directory="profiles/default"
+        description="Create an editable tagline with portlet assignments"
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        />
+
+    <gs:upgradeStep
+        title="Upgrade to 1001 profile version"
+        description="Use a custom permission to manage the contents of the viewlet"
+        source="*"
+        destination="1001"
+        handler=".upgrades.upgrade_to_1001"
+        profile="cs.editabletagline:default" />
+
+</configure>
