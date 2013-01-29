@@ -1,9 +1,15 @@
 ===================
 cs.editabletagline
-=================== 
+===================
 
-1.1 (UNRELEASED)
+2.0 (2013/01/29)
 --------------------
+
+- Provide a permission to edit the tagline
+    [erral]
+
+- Add translations
+    [erral]
 
 1.0.1 (2012/06/13)
 --------------------

@@ -1,11 +1,11 @@
 from setuptools import setup, find_packages
 import os
 
-version = '1.1'
+version = '2.0'
 
 setup(name='cs.editabletagline',
       version=version,
-      description="A simple package providing a editable footer for Plone",
+      description="A simple package providing a editable tagline for Plone",
       long_description=open("README.txt").read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
       # Get more strings from http://www.python.org/pypi?%3Aaction=list_classifiers
@@ -13,7 +13,7 @@ setup(name='cs.editabletagline',
         "Framework :: Plone",
         "Programming Language :: Python",
         ],
-      keywords='',
+      keywords='plone viewlet tagline',
       author='Lur Ibargutxi',
       author_email='libargutxi@codesyntax.com',
       url='http://github.com/codesyntax/cs.editabletagline',
@@ -28,8 +28,8 @@ setup(name='cs.editabletagline',
       ],
       entry_points="""
       # -*- Entry points: -*-
-      
+
       [z3c.autoinclude.plugin]
-      target = plone      
+      target = plone
       """,
       )
