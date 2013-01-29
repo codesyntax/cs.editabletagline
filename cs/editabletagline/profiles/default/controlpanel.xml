@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <object name="portal_controlpanel"
-        i18n:domain="cs.editablefooter"
+        i18n:domain="cs.editabletagline"
         xmlns:i18n="http://xml.zope.org/namespaces/i18n">
   <configlet title="Editable tagline settings"
              action_id="cs.editabletagline.edittagline"

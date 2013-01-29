@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cs.editabletagline\n"
-"POT-Creation-Date: 2013-01-29 11:14+0000\n"
-"PO-Revision-Date: 2013-01-29 12:36+0100\n"
+"POT-Creation-Date: 2013-01-29 12:13+0000\n"
+"PO-Revision-Date: 2013-01-29 13:14+0100\n"
 "Last-Translator: Mikel Larreategi <mlarreategi@codesyntax.com>\n"
 "Language-Team: es <es@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -22,6 +22,9 @@ msgstr "Tagline/Lema "
 #: ./tagline.py:69
 msgid "Editable tagline content"
 msgstr "Contenido del tagline"
+
+msgid "Editable tagline settings"
+msgstr "Taglile/Lema editable"
 
 #: ./tagline.py:70
 msgid "Enter the content of the tagline"

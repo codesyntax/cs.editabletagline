@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cs.editablefooter\n"
-"POT-Creation-Date: 2013-01-29 12:13+0000\n"
+"POT-Creation-Date: 2012-11-19 07:48+0000\n"
 "PO-Revision-Date: 2012-11-19 08:46+0100\n"
 "Last-Translator: Mikel Larreategi <mlarreategi@codesyntax.com>\n"
 "Language-Team: eu <eu@li.org>\n"
@@ -15,26 +15,5 @@ msgstr ""
 "Domain: DOMAIN\n"
 "X-Poedit-Language: Basque\n"
 
-#: ./tagline.py:68
-msgid "Editable tagline"
-msgstr ""
-
-#: ./tagline.py:69
-msgid "Editable tagline content"
-msgstr ""
-
 msgid "Editable tagline settings"
 msgstr ""
-
-#: ./tagline.py:70
-msgid "Enter the content of the tagline"
-msgstr ""
-
-#: ./interfaces.py:13
-msgid "Insert here the HTML that will appear in the tagline"
-msgstr ""
-
-#: ./interfaces.py:12
-msgid "Tagline text"
-msgstr ""
-
