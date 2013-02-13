@@ -2,6 +2,11 @@
 cs.editabletagline
 ===================
 
+2.0.1 (2013/02/13)
+---------------------
+
+- Fix ZCML declaration for edit form with the correct permission
+
 2.0 (2013/01/29)
 --------------------
 

@@ -12,7 +12,7 @@
         name="editabletagline-controlpanel"
         for="Products.CMFPlone.interfaces.IPloneSiteRoot"
         class=".tagline.EditableTaglineControlPanel"
-        permission="cmf.ManagePortal"
+        permission="cs.editabletagline.edittagline"
         layer=".interfaces.IProductLayer"
         />
 
